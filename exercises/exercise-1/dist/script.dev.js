@@ -1,3 +1,5 @@
+"use strict";
+
 /*
 
 Exercise 1
@@ -12,19 +14,12 @@ Exercise 1
 - Run the code on the command line in node
 
 */
-
-const greekGods = [
-  "Aphrodite",
-  "Ares",
-  "Artemis",
-  "Athena",
-  "Poseidon",
-  "Zeus",
-];
-
-greekGods.forEach((item, index) => {
+var greekGods = ["Aphrodite", "Ares", "Artemis", "Athena", "Poseidon", "Zeus"];
+greekGods.forEach(function (item, index) {
   if (index === 2) {
-    setTimeout(() => console.log(index, item), 3000);
+    setTimeout(function () {
+      return console.log(index, item);
+    }, 3000);
   } else {
     console.log(index, item);
   }
